@@ -23,7 +23,7 @@ do
    if grep "Executed successfully." debug_${eachscript}.txt; then 
       echo -e "\033[32m $eachscript was executed successfully${NC} \033[0m " 
    else
-      echo  -e "\033[31m !!! $eachscript FAILD !!!!${NC} \033[0m " 
+      echo  -e "\033[31m !!! $eachscript FAILED !!!!${NC} \033[0m " 
       cat debug_${eachscript}.txt
    fi
 done
